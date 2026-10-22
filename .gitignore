@@ -20,7 +20,9 @@ labels/
 !assets/labels/
 *.csv
 !assets/labels/*.csv
-notebooks/
+notebooks/*
+!notebooks/ladder.py
+!notebooks/kernel-metadata.example.json
 results/
 
 # Large artifacts

@@ -1,0 +1,16 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/mammosightr-ladder",
+  "title": "mammosightr ladder",
+  "code_file": "ladder.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "YOUR_KAGGLE_USERNAME/mammosightr-labels-convnext-ftune",
+    "YOUR_KAGGLE_USERNAME/mammosightr-yarisma-768"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
