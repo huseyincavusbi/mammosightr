@@ -22,5 +22,6 @@ results/
 
 # Large artifacts
 *.npz
+!assets/feat_stats.npz
 *.pth
 *.ckpt
