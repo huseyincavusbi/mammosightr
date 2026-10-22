@@ -1,0 +1,140 @@
+{
+  "ce": {
+    "base": {
+      "split": "soup_ce",
+      "n": 2000,
+      "birads_macro_f1": 0.6286,
+      "birads_acc": 0.6975,
+      "birads_per_class_f1": [
+        0.3947,
+        0.5954,
+        0.8959
+      ],
+      "density_macro_f1": 0.7311,
+      "density_acc": 0.744,
+      "density_per_class_f1": [
+        0.6803,
+        0.7665,
+        0.7394,
+        0.7379
+      ],
+      "quadrant_side_acc": 0.6752,
+      "quadrant_sides": 1727,
+      "gated_score": 0.6435,
+      "gated_ci95": [
+        0.6251,
+        0.6607
+      ]
+    },
+    "calibrated": {
+      "split": "soup_ce_cal",
+      "n": 2000,
+      "birads_macro_f1": 0.6352,
+      "birads_acc": 0.6915,
+      "birads_per_class_f1": [
+        0.4236,
+        0.5707,
+        0.9114
+      ],
+      "density_macro_f1": 0.7273,
+      "density_acc": 0.74,
+      "density_per_class_f1": [
+        0.6901,
+        0.7571,
+        0.7454,
+        0.7167
+      ],
+      "quadrant_side_acc": 0.6752,
+      "quadrant_sides": 1727,
+      "gated_score": 0.6375,
+      "gated_ci95": [
+        0.6175,
+        0.655
+      ]
+    },
+    "temperature": [
+      1.0000000000000004,
+      1.0000000000000004
+    ],
+    "bias_b": [
+      0.2999999999999998,
+      -2.220446049250313e-16,
+      -0.9
+    ],
+    "bias_d": [
+      0.3999999999999997,
+      -2.220446049250313e-16,
+      0.19999999999999973,
+      -2.220446049250313e-16
+    ]
+  },
+  "emd": {
+    "base": {
+      "split": "soup_emd",
+      "n": 2000,
+      "birads_macro_f1": 0.6244,
+      "birads_acc": 0.6945,
+      "birads_per_class_f1": [
+        0.3854,
+        0.5923,
+        0.8956
+      ],
+      "density_macro_f1": 0.3565,
+      "density_acc": 0.6315,
+      "density_per_class_f1": [
+        0.0,
+        0.7566,
+        0.6696,
+        0.0
+      ],
+      "quadrant_side_acc": 0.6746,
+      "quadrant_sides": 1727,
+      "gated_score": 0.6298,
+      "gated_ci95": [
+        0.6111,
+        0.6473
+      ]
+    },
+    "calibrated": {
+      "split": "soup_emd_cal",
+      "n": 2000,
+      "birads_macro_f1": 0.6257,
+      "birads_acc": 0.692,
+      "birads_per_class_f1": [
+        0.4047,
+        0.5791,
+        0.8933
+      ],
+      "density_macro_f1": 0.5097,
+      "density_acc": 0.675,
+      "density_per_class_f1": [
+        0.0,
+        0.7517,
+        0.7011,
+        0.5859
+      ],
+      "quadrant_side_acc": 0.6746,
+      "quadrant_sides": 1727,
+      "gated_score": 0.6318,
+      "gated_ci95": [
+        0.6132,
+        0.6482
+      ]
+    },
+    "temperature": [
+      1.0000000000000004,
+      3.000000000000002
+    ],
+    "bias_b": [
+      0.19999999999999973,
+      -2.220446049250313e-16,
+      0.19999999999999973
+    ],
+    "bias_d": [
+      -1.0,
+      -1.0,
+      -1.0,
+      0.9999999999999996
+    ]
+  }
+}

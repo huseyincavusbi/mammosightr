@@ -1,0 +1,342 @@
+{
+  "folds": [
+    {
+      "fold": 1,
+      "val": {
+        "split": "fold1_val",
+        "n": 2685,
+        "birads_macro_f1": 0.8497,
+        "birads_acc": 0.8801,
+        "birads_per_class_f1": [
+          0.7068,
+          0.8923,
+          0.95
+        ],
+        "density_macro_f1": 0.8072,
+        "density_acc": 0.8104,
+        "density_per_class_f1": [
+          0.7716,
+          0.8217,
+          0.798,
+          0.8377
+        ],
+        "quadrant_side_acc": 0.6477,
+        "quadrant_sides": 1842,
+        "gated_score": 0.8272,
+        "gated_ci95": [
+          0.8155,
+          0.8383
+        ]
+      },
+      "test": {
+        "split": "fold1_test",
+        "n": 2000,
+        "birads_macro_f1": 0.6151,
+        "birads_acc": 0.6885,
+        "birads_per_class_f1": [
+          0.3958,
+          0.579,
+          0.8705
+        ],
+        "density_macro_f1": 0.7281,
+        "density_acc": 0.7425,
+        "density_per_class_f1": [
+          0.6712,
+          0.7682,
+          0.736,
+          0.7368
+        ],
+        "quadrant_side_acc": 0.6752,
+        "quadrant_sides": 1727,
+        "gated_score": 0.6347,
+        "gated_ci95": [
+          0.6154,
+          0.6513
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "val": {
+        "split": "fold2_val",
+        "n": 2685,
+        "birads_macro_f1": 0.8587,
+        "birads_acc": 0.8812,
+        "birads_per_class_f1": [
+          0.7313,
+          0.8858,
+          0.9591
+        ],
+        "density_macro_f1": 0.7949,
+        "density_acc": 0.8026,
+        "density_per_class_f1": [
+          0.742,
+          0.8158,
+          0.7987,
+          0.8233
+        ],
+        "quadrant_side_acc": 0.6346,
+        "quadrant_sides": 1883,
+        "gated_score": 0.8241,
+        "gated_ci95": [
+          0.8123,
+          0.8362
+        ]
+      },
+      "test": {
+        "split": "fold2_test",
+        "n": 2000,
+        "birads_macro_f1": 0.6432,
+        "birads_acc": 0.7025,
+        "birads_per_class_f1": [
+          0.4206,
+          0.5981,
+          0.911
+        ],
+        "density_macro_f1": 0.7257,
+        "density_acc": 0.744,
+        "density_per_class_f1": [
+          0.6841,
+          0.7782,
+          0.7323,
+          0.7084
+        ],
+        "quadrant_side_acc": 0.674,
+        "quadrant_sides": 1727,
+        "gated_score": 0.6478,
+        "gated_ci95": [
+          0.6288,
+          0.6668
+        ]
+      }
+    },
+    {
+      "fold": 3,
+      "val": {
+        "split": "fold3_val",
+        "n": 2685,
+        "birads_macro_f1": 0.8535,
+        "birads_acc": 0.8831,
+        "birads_per_class_f1": [
+          0.7127,
+          0.8912,
+          0.9567
+        ],
+        "density_macro_f1": 0.7861,
+        "density_acc": 0.7877,
+        "density_per_class_f1": [
+          0.7475,
+          0.7884,
+          0.7804,
+          0.8282
+        ],
+        "quadrant_side_acc": 0.643,
+        "quadrant_sides": 1846,
+        "gated_score": 0.8257,
+        "gated_ci95": [
+          0.8138,
+          0.8372
+        ]
+      },
+      "test": {
+        "split": "fold3_test",
+        "n": 2000,
+        "birads_macro_f1": 0.6318,
+        "birads_acc": 0.7015,
+        "birads_per_class_f1": [
+          0.3811,
+          0.6152,
+          0.8993
+        ],
+        "density_macro_f1": 0.7415,
+        "density_acc": 0.7525,
+        "density_per_class_f1": [
+          0.6681,
+          0.7647,
+          0.7581,
+          0.775
+        ],
+        "quadrant_side_acc": 0.6752,
+        "quadrant_sides": 1727,
+        "gated_score": 0.6478,
+        "gated_ci95": [
+          0.6292,
+          0.6657
+        ]
+      }
+    },
+    {
+      "fold": 4,
+      "val": {
+        "split": "fold4_val",
+        "n": 2685,
+        "birads_macro_f1": 0.8535,
+        "birads_acc": 0.8764,
+        "birads_per_class_f1": [
+          0.7237,
+          0.8755,
+          0.9613
+        ],
+        "density_macro_f1": 0.8109,
+        "density_acc": 0.8138,
+        "density_per_class_f1": [
+          0.7946,
+          0.8271,
+          0.8054,
+          0.8164
+        ],
+        "quadrant_side_acc": 0.6374,
+        "quadrant_sides": 1878,
+        "gated_score": 0.8219,
+        "gated_ci95": [
+          0.8093,
+          0.8342
+        ]
+      },
+      "test": {
+        "split": "fold4_test",
+        "n": 2000,
+        "birads_macro_f1": 0.6287,
+        "birads_acc": 0.689,
+        "birads_per_class_f1": [
+          0.4057,
+          0.5682,
+          0.9124
+        ],
+        "density_macro_f1": 0.7283,
+        "density_acc": 0.742,
+        "density_per_class_f1": [
+          0.6885,
+          0.7648,
+          0.7399,
+          0.7202
+        ],
+        "quadrant_side_acc": 0.6752,
+        "quadrant_sides": 1727,
+        "gated_score": 0.6348,
+        "gated_ci95": [
+          0.6151,
+          0.6525
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "val": {
+      "birads_macro_f1": {
+        "mean": 0.8538,
+        "std": 0.0037,
+        "values": [
+          0.8497,
+          0.8587,
+          0.8535,
+          0.8535
+        ],
+        "ci95_t": [
+          0.848,
+          0.8597
+        ]
+      },
+      "density_macro_f1": {
+        "mean": 0.7998,
+        "std": 0.0114,
+        "values": [
+          0.8072,
+          0.7949,
+          0.7861,
+          0.8109
+        ],
+        "ci95_t": [
+          0.7816,
+          0.8179
+        ]
+      },
+      "quadrant_side_acc": {
+        "mean": 0.6407,
+        "std": 0.0058,
+        "values": [
+          0.6477,
+          0.6346,
+          0.643,
+          0.6374
+        ],
+        "ci95_t": [
+          0.6314,
+          0.65
+        ]
+      },
+      "gated_score": {
+        "mean": 0.8247,
+        "std": 0.0023,
+        "values": [
+          0.8272,
+          0.8241,
+          0.8257,
+          0.8219
+        ],
+        "ci95_t": [
+          0.8211,
+          0.8283
+        ]
+      }
+    },
+    "test": {
+      "birads_macro_f1": {
+        "mean": 0.6297,
+        "std": 0.0116,
+        "values": [
+          0.6151,
+          0.6432,
+          0.6318,
+          0.6287
+        ],
+        "ci95_t": [
+          0.6113,
+          0.6481
+        ]
+      },
+      "density_macro_f1": {
+        "mean": 0.7309,
+        "std": 0.0072,
+        "values": [
+          0.7281,
+          0.7257,
+          0.7415,
+          0.7283
+        ],
+        "ci95_t": [
+          0.7195,
+          0.7423
+        ]
+      },
+      "quadrant_side_acc": {
+        "mean": 0.6749,
+        "std": 0.0006,
+        "values": [
+          0.6752,
+          0.674,
+          0.6752,
+          0.6752
+        ],
+        "ci95_t": [
+          0.6739,
+          0.6759
+        ]
+      },
+      "gated_score": {
+        "mean": 0.6413,
+        "std": 0.0075,
+        "values": [
+          0.6347,
+          0.6478,
+          0.6478,
+          0.6348
+        ],
+        "ci95_t": [
+          0.6293,
+          0.6533
+        ]
+      }
+    }
+  }
+}

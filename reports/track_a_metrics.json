@@ -1,0 +1,59 @@
+{
+  "backbone": "gulluk",
+  "train_cases": 1200,
+  "val_cases": 300,
+  "test_cases": 2000,
+  "epochs": 5,
+  "val": {
+    "split": "val",
+    "n": 300,
+    "birads_macro_f1": 0.8319,
+    "birads_acc": 0.8333,
+    "birads_per_class_f1": [
+      0.733,
+      0.819,
+      0.943
+    ],
+    "density_macro_f1": 0.7768,
+    "density_acc": 0.7833,
+    "density_per_class_f1": [
+      0.701,
+      0.798,
+      0.761,
+      0.846
+    ],
+    "quadrant_side_acc": 0.6111,
+    "quadrant_sides": 234,
+    "gated_score": 0.7721,
+    "gated_ci95": [
+      0.7305,
+      0.81
+    ]
+  },
+  "test": {
+    "split": "yarisma",
+    "n": 2000,
+    "birads_macro_f1": 0.6127,
+    "birads_acc": 0.677,
+    "birads_per_class_f1": [
+      0.341,
+      0.582,
+      0.915
+    ],
+    "density_macro_f1": 0.715,
+    "density_acc": 0.724,
+    "density_per_class_f1": [
+      0.653,
+      0.744,
+      0.714,
+      0.75
+    ],
+    "quadrant_side_acc": 0.6752,
+    "quadrant_sides": 1727,
+    "gated_score": 0.623,
+    "gated_ci95": [
+      0.604,
+      0.6416
+    ]
+  }
+}
