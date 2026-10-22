@@ -15,8 +15,11 @@ teknofest/
 
 # Docs, datasets, notebooks and results (excluded for now)
 *.md
+!reports/leaderboard.md
 labels/
+!assets/labels/
 *.csv
+!assets/labels/*.csv
 notebooks/
 results/
 
