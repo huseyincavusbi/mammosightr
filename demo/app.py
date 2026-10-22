@@ -15,15 +15,21 @@ from predict import B3_NAMES, DENS_NAMES, FILES, load_backbone, forward_case  # 
 from train_heads import HieraMIL3, ZONES  # noqa: E402
 
 DEV = torch.device("cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu"))
+HEADS_DIR = ROOT / "assets/heads"
+if not HEADS_DIR.exists():
+    HEADS_DIR = ROOT / "results/improve"
 HEADS = []
 for _s in (0, 1, 2):
-    ck = torch.load(ROOT / f"results/improve/soup_ce_seed{_s}.pt", map_location="cpu", weights_only=False)
+    ck = torch.load(HEADS_DIR / f"soup_ce_seed{_s}.pt", map_location="cpu", weights_only=False)
     _h = HieraMIL3(ck["dim"]).to(DEV)
     _h.load_state_dict(ck["state"])
     _h.eval()
     HEADS.append(_h)
 BACKBONE = load_backbone(DEV)
-STATS = np.load(ROOT / "results/feat_stats.npz")
+STATS_PATH = ROOT / "assets/feat_stats.npz"
+if not STATS_PATH.exists():
+    STATS_PATH = ROOT / "results/feat_stats.npz"
+STATS = np.load(STATS_PATH)
 
 
 def predict(lcc, lmlo, rcc, rmlo):

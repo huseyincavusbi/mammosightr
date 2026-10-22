@@ -17,7 +17,7 @@ from ensemble_calibrate import evaluate, fit_temperature, tune_bias  # noqa: E40
 
 B3 = {"0": 0, "1-2": 1, "4-5": 2}
 DENS = {"A": 0, "B": 1, "C": 2, "D": 3}
-FEAT = ROOT / "features/features_full_gulluk_convnext_small.npz"
+FEAT = Path(os.environ.get("FEATURES_FILE", ROOT / "notebooks/out/features_full_gulluk_convnext_small.npz"))
 MAXV = 4
 
 

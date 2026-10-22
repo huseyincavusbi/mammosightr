@@ -223,6 +223,7 @@ def evaluate(items, preds, name):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--backbone", default="gulluk", choices=list(FEATS))
+    ap.add_argument("--features", default=None, help="feature npz path (overrides backbone default)")
     ap.add_argument("--per-class", type=int, default=400)
     ap.add_argument("--val-per-class", type=int, default=100)
     ap.add_argument("--epochs", type=int, default=5)
@@ -234,7 +235,7 @@ def main():
     print(f"device: {device}", flush=True)
     rng = np.random.default_rng(args.seed)
 
-    z = np.load(FEATS[args.backbone])
+    z = np.load(args.features if args.features else FEATS[args.backbone])
     tr_keys = [k for k in z.keys() if k.startswith("tr_")]
     va_keys = [k for k in z.keys() if k.startswith("va_")]
     te_keys = [k for k in z.keys() if k.startswith("te_")]

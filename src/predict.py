@@ -58,7 +58,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dir", help="case folder with LCC/LMLO/RCC/RMLO pngs")
     ap.add_argument("--case", help="patient id (uses cached YARISMA features)")
-    ap.add_argument("--head", default=str(ROOT / "results/heads_trackA.pt"))
+    ap.add_argument("--head", default=str(ROOT / "assets/heads/soup_ce_seed0.pt"))
     args = ap.parse_args()
 
     device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
@@ -66,7 +66,10 @@ def main():
     head = HieraMIL3(ck["dim"]).to(device)
     head.load_state_dict(ck["state"])
     head.eval()
-    stats = np.load(ROOT / "results/feat_stats.npz")
+    stats_path = ROOT / "assets/feat_stats.npz"
+    if not stats_path.exists():
+        stats_path = ROOT / "results/feat_stats.npz"
+    stats = np.load(stats_path)
 
     if args.case:
         z = np.load(ROOT / "notebooks/out/features_full_gulluk_convnext_small.npz")
