@@ -1,7 +1,10 @@
-# MammosightTR — Case-Level BI-RADS / Density / Quadrant
+# MammosighTR — Case-Level BI-RADS / Density / Quadrant
 
 Demo on the MammosighTR screening dataset: predict grouped
 BI-RADS, breast density and lesion quadrant per case from four mammographic views.
+
+Independent work using the public data release, not an official competition
+submission, not clinically validated, and not a medical device.
 
 ## Data
 
@@ -33,6 +36,23 @@ BI-RADS call). Best single split: 0.6435 gated.
 - Three heads (BI-RADS, density, quadrant) trained with a gated 0.70/0.15/0.15 loss.
 - Shipping model: logit soup of three seeded heads.
 - YARISMA DICOMs preprocessed classically to 768x1024 (8,000 views, 0 failures).
+
+## Training setup
+
+| Split | Cases | Views | Role |
+| :--- | ---: | ---: | :--- |
+| Full dataset | 12,740 | 50,074 | — |
+| Official train (EGITIM1 + EGITIM2) | 10,740 | 42,074 | feature extraction |
+| ├ head training (folds 2-4) | 8,055 | 31,573 | 5 epochs, 3 seeds |
+| └ validation (fold 1) | 2,685 | 10,501 | model/calibration selection |
+| Official test (YARISMA) | 2,000 | 8,000 | evaluation only |
+
+- **Features:** frozen ConvNeXt-small on all 12,740 cases (one 768-d vector per view).
+- **Heads:** AdamW, lr 1e-3, **5 epochs**, gated 0.70/0.15/0.15 loss; batch = 1 case (soups: 256).
+- **Shipping model:** 3 seeds × 5 epochs (logit soup); 4-fold CV repeats 5 epochs per fold.
+- **Image-level baseline:** 10 epochs on the same per-view features (0.501 YARISMA).
+- **Fast-iteration subset:** 1,200 balanced cases from folds 2-4 — same 5-epoch recipe.
+- **Fine-tune ablation:** last encoder stage, **3 epochs** on those 1,200 cases (rejected).
 
 ## Findings
 
