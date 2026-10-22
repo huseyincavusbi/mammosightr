@@ -1,0 +1,26 @@
+# Data / environment (not redistributed)
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+data/
+preprocessed/
+yarisma/
+kaggle_uploads/
+code/
+logs/
+papers/
+teknofest/
+
+# Docs, datasets, notebooks and results (excluded for now)
+*.md
+labels/
+*.csv
+notebooks/
+results/
+
+# Large artifacts
+*.npz
+*.pth
+*.ckpt
